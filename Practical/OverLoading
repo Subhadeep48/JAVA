@@ -1,0 +1,30 @@
+package p3;
+
+public class OverloadingExample {
+		void disp(int number){
+		System.out.println ("method:" + number);
+		}
+		void disp(int number1, int number2){
+		System.out.println ("method:" + number1 + "," + number2);
+		}
+		double disp(double number) {
+		System.out.println("method:" + number);
+		return number;
+		}
+		}
+		class CompileTimePolymorphismDemo
+		{
+	
+		
+
+	public static void main(String[] args) {
+		OverloadingExample ov= new OverloadingExample();
+		double result;
+		ov.disp(60);
+		ov.disp(70, 50);
+		result = ov.disp(6.1);
+		System.out.println("Answer is:" + result);
+		
+	}
+
+}
