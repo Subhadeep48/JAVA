@@ -1,0 +1,27 @@
+package p3;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWriterExample {
+
+    public static void main(String[] args) {
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter("D:/anudip.txt");
+            writer.write("Delighted to be a part of Anudip");
+            writer.flush();
+            System.out.println("Data written to File");
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } finally {
+            try {
+                if (writer != null) {
+                    writer.close();
+                }
+            } catch (IOException ioe) {
+
+            }
+        }
+    }
+
+}
