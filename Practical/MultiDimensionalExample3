@@ -1,0 +1,12 @@
+package p3;
+
+public class MultiDimensionalExample3 {
+
+	public static void main(String[] args) {
+		int[][] md = { {1,2,3},{4,5,6}, {7,8,9} };
+		System.out.println("Length of row 1: "+md[0].length);
+		System.out.println("Length of row 2: "+md[1].length);
+		System.out.println("Length of row 3: "+md[2].length);
+	}
+
+}
