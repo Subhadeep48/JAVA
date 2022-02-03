@@ -1,0 +1,22 @@
+package p3;
+import java.util.*;
+ 
+ public class Numbers{
+	 int a,b;
+	 Numbers(){
+	 Scanner sc=new Scanner(System.in);
+	 System.out.println("First Number :");
+	 a=sc.nextInt();
+	 System.out.print("Second Number: ");
+	 b=sc.nextInt(); 
+	 
+	 System.out.println("the sum is:"+(a+b));
+	 System.out.println("the difference is:"+(a-b));
+	 System.out.println("the product is:"+(a*b));
+	 System.out.println("the quotient is:"+(a/b));
+ }
+ 	public static void main(String args[]){
+	 	new Numbers();
+
+ }
+ }
