@@ -1,0 +1,26 @@
+package p3;
+class A{
+	int i;
+	void display1(){
+		System.out.println(i);
+	}
+}
+public class B extends A{
+	int j;
+	void display(){
+		System.out.println(j);
+	}
+void methodoverloading(){
+	i=1; 
+	 j=2; 
+	 display1();
+	 display();
+}
+	public static void main(String[] args) {
+		 B obj = new B(); 
+		 obj.methodoverloading();
+		 
+
+	}
+
+}
