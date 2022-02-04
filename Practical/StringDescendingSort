@@ -1,0 +1,28 @@
+package p3;
+import java.util.Scanner;
+public class StringDescendingSort {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String arr[]=new String[7];
+		String temp="";
+		int i,j;
+		for(i=0;i<arr.length;i++){
+			arr[i]=sc.nextLine();
+		}
+		for (i=0;i<arr.length;i++){  
+			for (j=i+1;j<arr.length;j++){  
+		if (arr[i].compareTo(arr[j])>0){  
+		temp=arr[i];  
+		arr[i]=arr[j];  
+		arr[j]=temp;  
+		}  
+	}  
+}  
+		System.out.println("Array elements in descending order:");  
+		for(i=0;i<arr.length-1;i++){  
+		System.out.println(arr[i]);  
+		}  
+
+	}
+
+}
